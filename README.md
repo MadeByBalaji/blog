@@ -46,4 +46,4 @@ This work is published under [MIT][mit] License.
 
 ## Commands to run locally
 
-`bundle exec jekyll s`
+`bundle exec jekyll s --incremental`

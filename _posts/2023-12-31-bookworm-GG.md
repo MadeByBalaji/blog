@@ -8,8 +8,8 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: assets\lib\blog\2023\bookworm\2023-booklist.png
-  lqip: assets\lib\blog\2023\bookworm\2023-booklist.png
+  path: /assets/lib/blog/2023/bookworm/2023-booklist.png
+  lqip: /assets/lib/blog/2023/bookworm/2023-booklist.png
   #alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 

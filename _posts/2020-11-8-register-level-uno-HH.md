@@ -8,8 +8,8 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: assets\lib\blog\2020\register-level-uno\arduino.jpg
-  lqip: assets\lib\blog\2020\register-level-uno\arduino.jpg
+  path: /assets/lib/blog/2020/register-level-uno/arduino.jpg
+  lqip: /assets/lib/blog/2020/register-level-uno/arduino.jpg
   #alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 

@@ -8,8 +8,8 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: assets\lib\blog\2022\street-light\overview.jpg
-  lqip: assets\lib\blog\2022\street-light\overview.jpg
+  path: /assets/lib/blog/2022/street-light/overview.jpg
+  lqip: /assets/lib/blog/2022/street-light/overview.jpg
   #alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 

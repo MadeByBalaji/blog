@@ -8,8 +8,8 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: assets\lib\blog\2020\fire-pc\overview.jpg
-  lqip: assets\lib\blog\2020\fire-pc\overview.jpg
+  path: /assets/lib/blog/2020/fire-pc/overview.jpg
+  lqip: /assets/lib/blog/2020/fire-pc/overview.jpg
   #alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 

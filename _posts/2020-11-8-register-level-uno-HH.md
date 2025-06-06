@@ -33,7 +33,7 @@ Based on the PIN definition, there are three ports in Arduino's microcontroller 
 
 1. PORT-D (digital pin 0- 7)
 
-![ATMEGA 168 Pin Mapping](assets\img\blog\2020\register-level-uno\Atmega168PinMap.png){: width="609" height="704" }
+![ATMEGA 168 Pin Mapping](assets/img/blog/2020/register-level-uno/Atmega168PinMap.png){: width="609" height="704" }
 _ATMEGA 168 Pin Mapping_
 
 There are three types of  register

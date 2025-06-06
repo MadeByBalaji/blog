@@ -37,7 +37,7 @@ image:
 
   Has 2xMIPI-CSI. RK3399 can support dual-8MegaPixel or Single-13MegaPixel Camera.
 
-![fireFly2](assets\img\blog\2020\fire-pc\fireFly2.jpg){: width="1118" height="589" }
+![fireFly2](assets/img/blog/2020/fire-pc/fireFly2.jpg){: width="1118" height="589" }
 _fireFly2_
 
 
@@ -49,7 +49,7 @@ _fireFly2_
 
   Support Android, Ubuntu, PhoenixOS, Firefly Geek Entertainment System--Station OS, Desktop and Media mode, seamless switching between study, entertainment, and work
 
-![Firefly-Station](assets\img\blog\2020\fire-pc\Firefly-Station.jpg){: width="712" height="289" }
+![Firefly-Station](assets/img/blog/2020/fire-pc/Firefly-Station.jpg){: width="712" height="289" }
 _Firefly-Station_
 
 
@@ -151,6 +151,6 @@ _Firefly-Station_
 
   120 mm × 72 mm × 11.2 mm
 
-![FireFly vs Pencil](assets\img\blog\2020\fire-pc\FireFly-vs-pencil.jpg){: width="766" height="519" }
+![FireFly vs Pencil](assets/img/blog/2020/fire-pc/FireFly-vs-pencil.jpg){: width="766" height="519" }
 _FireFly vs Pencil_
 

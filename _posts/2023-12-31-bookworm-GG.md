@@ -40,7 +40,7 @@ As another year dawns upon us, it's time to reflect on the literary adventures t
 
 1. **Atomic Habits**: James Clear's masterpiece on habit formation offered practical strategies for building good habits and breaking free from destructive ones, empowering me to take control of my destiny one small step at a time. 
 
-1. **Wings of Fire** (Not Completed, Will Not Recommend to Others): While the premise held promise, this unfinished memoir left me underwhelmed, failing to leave a lasting impression or resonate with my sensibilities.
+1. **Wings of Fire**: (Not Completed, Will Not Recommend to Others): While the premise held promise, this unfinished memoir left me underwhelmed, failing to leave a lasting impression or resonate with my sensibilities.
 
 1. **Elon Musk**: Ashlee Vance's in-depth biography of the visionary entrepreneur Elon Musk offered a fascinating glimpse into his life, highlighting his relentless drive, audacious goals, and unwavering determination to change the world. 
 
@@ -58,6 +58,7 @@ Let us carry forward the wisdom gained from these pages and embark on new journe
 
 Thanks,
 
+Here is my goodreads profile [here](https://www.goodreads.com/user/show/183578916-balaji)
 
 [^footnote]: https://sudwald.github.io/bookcollage/
 [^fn-nth-2]: https://www.s-anand.net/blog/books-in-2023/

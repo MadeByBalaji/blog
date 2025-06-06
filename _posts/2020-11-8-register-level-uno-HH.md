@@ -33,5 +33,55 @@ Based on the PIN definition, there are three ports in Arduino's microcontroller 
 
 1. PORT-D (digital pin 0- 7)
 
-<!-- [^footnote]: The footnote source -->
-<!-- [^fn-nth-2]: The 2nd footnote source -->
+![ATMEGA 168 Pin Mapping](assets\lib\blog\2020\register-level-uno\Atmega168PinMap.png){: width="609" height="704" }
+_ATMEGA 168 Pin Mapping_
+
+There are three types of  register
+
+1. *DDR register*, it determines whether the pin is an INPUT or OUTPUT. 
+1. *PORT register*, it controls whether the pin is HIGH or LOW. 
+1. *PIN register*, reads the state of INPUT pins set to input with pinMode().
+
+
+Now we will code in ArduinoIDE
+
+```c
+void setup() {
+  // put your setup code here, to run once:
+ DDRB |= 0x20; //pinMode(13,OUTPUT);
+  /*
+  DDRB means Port B Data Direction Register, which is set to 0b100000
+  Here I am setting PIN 13 as OUTPUT by writing 1 on DDRB register
+  */
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+ PORTB |= 0x20; //digitalWrite(13,HIGH);
+  /*
+  PORTB means Data Register, which is set to 0b100000
+  Here I am setting PIN 13 as HIGH or High voltage(+5) is passed to  that PIN
+  */
+  delay(1000);
+ PORTB &= ~(0x20); //digitalWrite(13,LOW);
+  /*
+  PORTB means Data Register, which is set to 0b000000, so that other PINs are not modified
+  Here I am setting PIN 13 as LOW or LOW voltage(GND) is passed to  that PIN
+  */
+  delay(1000);
+}
+```
+
+DDRB means Port B Data Direction Register, which is set to 100000(in binary)
+
+Here I am setting PIN 13 of Arduino as OUTPUT by writing 1 on the DDRB register. As we are using the DDR register on Port B it becomes DDRB.
+
+
+PORTB means Data Register, which is set to 100000(in binary)
+Here I am setting PIN 13 of Arduino that is the pin that has inbuild LED as HIGH or High voltage(+5) is passed to that PIN. As we are using the PORT register on Port B it becomes PORTB.
+
+
+You can also get this code from Github [here](https://github.com/MadeByBalaji/Arduino/blob/master/BareMetalCode/LedBlink.ino)
+
+
+Thanks...

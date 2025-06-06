@@ -1,5 +1,5 @@
 ---
-title: Meet Your WhatsApp Superhero, Bitdefender Scamio!
+title: Meet Your WhatsApp Superhero
 description: Get rid of scams in whatsapp using Bitdefender
 date: 2024-06-01 11:59:00 -0530
 categories: [Geeky Gossip]

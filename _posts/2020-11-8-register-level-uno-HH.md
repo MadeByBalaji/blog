@@ -4,9 +4,9 @@ description: In this blog post, I will be doing register level coding using Ardu
 date: 2020-11-08 10:20:00 -0530
 categories: [Hobbyist Haven]
 tags: [bareMetalCode,arduino]
-pin: true
-math: true
-mermaid: true
+#pin: true
+#math: true
+#mermaid: true
 image:
   path: /assets/img/blog/2020/register-level-uno/arduino.jpg
   lqip: /assets/img/blog/2020/register-level-uno/arduino.jpg

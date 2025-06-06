@@ -4,9 +4,9 @@ description: In this project, I made a Street light controller using STM32F446RE
 date: 2022-11-02 11:33:00 -0530
 categories: [Firmware Fortress]
 tags: [embedded,stm32f446re]
-pin: true
-math: true
-mermaid: true
+#pin: true
+#math: true
+#mermaid: true
 image:
   path: /assets/img/blog/2022/street-light/overview.jpg
   lqip: /assets/img/blog/2022/street-light/overview.jpg

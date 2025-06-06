@@ -4,9 +4,9 @@ description: Firefly's 120mm Credit card sized PC with Six-Core 64-Bit High Perf
 date: 2020-11-01 10:20:00 -0530
 categories: [Chip Chat]
 tags: [news,minipc]
-pin: true
-math: true
-mermaid: true
+#pin: true
+#math: true
+#mermaid: true
 image:
   path: /assets/img/blog/2020/fire-pc/overview.jpg
   lqip: /assets/img/blog/2020/fire-pc/overview.jpg

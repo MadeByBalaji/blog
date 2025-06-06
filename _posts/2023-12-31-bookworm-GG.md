@@ -4,9 +4,9 @@ description: Books that I read in 2023
 date: 2023-12-31 11:59:00 -0530
 categories: [Geeky Gossip]
 tags: [books,goals]
-pin: true
-math: true
-mermaid: true
+#pin: true
+#math: true
+#mermaid: true
 image:
   path: /assets/img/blog/2023/bookworm/2023-booklist.png
   lqip: /assets/img/blog/2023/bookworm/2023-booklist.png

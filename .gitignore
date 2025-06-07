@@ -26,3 +26,8 @@ package-lock.json
 _sass/vendors
 assets/js/dist
 *.bak
+assets/img/blog/*.png
+assets/img/blog/*.jpg
+assets/img/blog/*.mp4
+assets/img/blog/*.gif
+assets/img/blog/*.jpeg

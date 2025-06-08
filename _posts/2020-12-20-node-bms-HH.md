@@ -3,10 +3,10 @@ title: BMS for Electric Vehicles using NODE MCU
 description: In this project, We will get the Battery percentage of Electric Vehicle on the web.
 date: 2020-12-20 10:20:00 -0530
 categories: [Hobbyist Haven]
-tags: [nodemcu,ev,bms]
+tags: [nodemcu,ev,bms,iot]
 image:
-  path: /assets/img/blog/2020/node-bms/analogMeter.png
-  lqip: /assets/img/blog/2020/node-bms/analogMeter.png
+  path: /assets/img/blog/2020/node-bms/analogMeter.jpg
+  lqip: /assets/img/blog/2020/node-bms/analogMeter.jpg
 ---
 
 ## Components:

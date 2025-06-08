@@ -22,8 +22,7 @@ image:
 
 1. 220 ohms Resistor  [link](https://www.amazon.in/INVENTO-Resistor-Resistance-Toleance-Quality/dp/B083CPQGGB/ref=sr_1_3?crid=8VBKZWQ7BV19&dchild=1&keywords=220+ohm+resistors&qid=1606215988&sprefix=220%2Caps%2C737&sr=8-3) 
 
-assets\img\blog\2020\
-![Top View](assets/img/blog/2020/uno-lcd/TotalViewLCDArduino.jpg){: width="536" height="628" }
+![Top View](assets/img/blog/2020/uno-lcd/TotalLCD.jpg){: width="536" height="628" }
 _Top View_
 
 ## Hardware Part:
@@ -37,7 +36,7 @@ _Top View_
 ## Circuit
 
 ![circuit](assets/img/blog/2020/uno-lcd/circuit.jpg){: width="1944" height="1815" }
-_circuit_
+_16x2 LCD Display with Arduino's circuit_
 
 ## Software Part:
 

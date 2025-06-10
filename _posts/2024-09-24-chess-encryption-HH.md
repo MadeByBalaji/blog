@@ -5,8 +5,8 @@ date: 2024-09-24 10:20:00 -0530
 categories: [Hobbyist Haven]
 tags: [python,tool,encryption]
 image:
-  path: /assets/img/blog/2024/chess-encry/chess-encrypt.jpg
-  lqip: /assets/img/blog/2024/chess-encry/chess-encrypt.jpg
+  path: /assets/img/blog/2024/chess-encry/chess.jpg
+  lqip: /assets/img/blog/2024/chess-encry/chess.jpg
 ---
 
 ## Overview:

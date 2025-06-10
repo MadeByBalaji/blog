@@ -5,8 +5,8 @@ date: 2024-09-24 10:20:00 -0530
 categories: [Hobbyist Haven]
 tags: [python,tool,encryption]
 image:
-  path: /assets/img/blog/2024/chess-encry/Chess-encrypt.jpg
-  lqip: /assets/img/blog/2024/chess-encry/Chess-encrypt.jpg
+  path: /assets/img/blog/2024/chess-encry/chess-encrypt.jpg
+  lqip: /assets/img/blog/2024/chess-encry/chess-encrypt.jpg
 ---
 
 ## Overview:
@@ -150,5 +150,5 @@ User-friendly Interface: With simple prompts and clear instructions, this tool a
 Thank you for reading! I’d love to hear your thoughts on how this concept could be expanded or integrated with other forms of data security.
 
 
-[^wintrcat-repo]: https://github.com/WintrCat/chessencryption
-[^balaji-repo]: https://github.com/MadeByBalaji/chessencryption
+[^wintrcat-repo]: [link](https://github.com/WintrCat/chessencryption)
+[^balaji-repo]: [link](https://github.com/MadeByBalaji/chessencryption)

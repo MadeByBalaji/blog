@@ -48,6 +48,3 @@ In this project, I used the Arduino IDE for programming NODE-MCU.
 _Dashboard_
 
 That's it for now..
-
-assets\img\blog\2020\\ThingSpeak.jpg
-assets\img\blog\2020\node-thing-speak\

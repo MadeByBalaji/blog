@@ -1,6 +1,6 @@
 ---
 title: Chess-Based Encryption Tool
-description: Creating a Chess-Based Encryption Tool: A Journey Through Code
+description: Creating a Chess-Based Encryption Tool- A Journey Through Code
 date: 2024-09-24 10:20:00 -0530
 categories: [Hobbyist Haven]
 tags: [python,tool,encryption]

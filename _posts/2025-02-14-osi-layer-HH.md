@@ -1,12 +1,12 @@
 ---
 title: Understanding Abstraction layers
-description: Understanding Abstraction layers in Modern Computing Systems: An Excel-Based Perspective
+description: Understanding Abstraction layers in Modern Computing Systems- An Excel-Based Perspective
 date: 2025-02-14 10:20:00 -0530
 categories: [Hobbyist Haven]
 tags: [excel,c,osi,cicd]
 image:
-  path: /assets/img/blog/2024/abstraction-layer/osi-layers.png
-  lqip: /assets/img/blog/2024/abstraction-layer/osi-layers.png
+  path: /assets/img/blog/2025/abstraction-layer/osi-layers.png
+  lqip: /assets/img/blog/2025/abstraction-layer/osi-layers.png
 ---
 
 In modern computing, abstraction plays a crucial role in bridging the gap between human-friendly applications and the intricate physical hardware that powers them. This blog explores the hierarchical abstraction levels in computing, using Microsoft Excel as an example to illustrate each layer.

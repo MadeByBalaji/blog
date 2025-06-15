@@ -1,6 +1,6 @@
 ---
 title: Terminal based Chat Bot using STM32
-description: In this post, DS1307 is used as RTC and it is connected to STM32F446RE using I2C.
+description: Terminal based Chat Bot using STM32.
 date: 2021-01-16 11:33:00 -0530
 categories: [Firmware Fortress]
 tags: [chatbot,uart,stm32f446re]
@@ -18,7 +18,7 @@ image:
 
 1. There is no external circuit in this project
 
-![Begin](assets/img/blog/2021/stm-bot/begin.png){: width="372" height="110" }
+![Begin](assets/img/blog/2021/stm-bot/begin.jpg){: width="372" height="110" }
 _Chat overview 1_
 
 ## Software Part:
@@ -29,5 +29,5 @@ _Chat overview 1_
 
 1. Using TeraTerm software you can find the messages, by giving the correct Port.
 
-![End](assets/img/blog/2021/stm-bot/end.png){: width="382" height="204" }
+![End](assets/img/blog/2021/stm-bot/end.jpg){: width="382" height="204" }
 _Chat overview 2_

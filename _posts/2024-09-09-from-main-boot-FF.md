@@ -1,0 +1,110 @@
+---
+title: From 0x0. To main() with bootloader
+description: Overview of where the MCU starts running.
+date: 2024-09-09 11:33:00 -0530
+categories: [Firmware Fortress]
+tags: [linkerscript,startup]
+image:
+  path: /assets/img/blog/2024/from-main-boot/boot.jpg
+  lqip: /assets/img/blog/2024/from-main-boot/boot.jpg
+---
+
+Thank you for the clarification, machi. I won’t touch your content at all. Here's your **original content**, just formatted properly for Markdown and compatible with the **Chirpy Jekyll theme**—like a clean drop into your `_posts` folder. No YAML front matter, no emoji, no content edits.
+
+---
+
+# VMA vs LMA: Behind the Scenes of Embedded Memory
+
+When dealing with embedded systems or low-level programming, it's essential to grasp how memory addresses are managed during execution. Linker scripts, especially in environments like embedded devices, define how different parts of a program are loaded and executed in memory. Two critical concepts in this context are Virtual Memory Address (VMA) and Load Memory Address (LMA).
+
+## What is VMA and LMA?
+
+**Virtual Memory Address (VMA):** VMA refers to the address where a section of the program will execute during runtime. This address is used by the CPU when the program is running.
+
+**Load Memory Address (LMA):** LMA is the address where a section is stored (or loaded) when the program is first loaded into memory. This address is typically associated with the flash memory (for embedded systems) where the program is initially loaded.
+
+In simpler terms:
+
+* **LMA** tells where in memory the code/data resides when first loaded (e.g., in Flash).
+* **VMA** indicates where the code/data will be transferred to for execution (e.g., in RAM).
+
+## Code Example with VMA and LMA
+
+Consider the following linker script snippet, which illustrates how to specify LMA and VMA:
+
+```ld
+SECTIONS
+{
+  /* Section for initialized data */
+  .data :
+  {
+    _data_start = .;      /* Mark the start of the data section */
+    *(.data)              /* Place all .data section content here */
+    _data_end = .;        /* Mark the end of the data section */
+  } >RAM AT>FLASH
+
+  /* Section for code (text) */
+  .text :
+  {
+    *(.text)              /* Place all code content here */
+  } >FLASH
+}
+```
+
+### Breakdown
+
+* `.data`: This section is initialized data. At runtime, this data will be placed in RAM (VMA), but it will be loaded initially from Flash (LMA).
+* `.text`: This section represents executable code. Both its LMA and VMA are Flash because the code can be executed directly from Flash memory.
+
+## Why VMA and LMA Matter in Embedded Systems
+
+In embedded systems, memory is limited, and RAM (where variables and stack are kept) is often significantly smaller than non-volatile memory like Flash (where the program code is stored). By using LMA and VMA, we can optimize memory use:
+
+* **Flash (LMA):** Large but slower; used to store the program's code and constant data.
+* **RAM (VMA):** Faster but smaller; used to execute code and hold runtime data.
+
+## Real-World Scenario: Appliance Shutdown and Data Persistence
+
+Let’s take a practical example of a washing machine. Appliances like washing machines are often powered by embedded systems to handle various tasks like setting the washing type (e.g., gentle, quick wash) and maintaining a timer for the wash cycle.
+
+Now, consider a scenario where the washing machine suffers a sudden power loss, such as during a power outage or being accidentally unplugged. How does the machine "remember" the wash type and timer when power is restored?
+
+This is where VMA, LMA, and non-volatile memory (like Flash) play a role.
+
+## Code Perspective
+
+The timer and washing type can be saved to non-volatile memory, ensuring that this data persists across shutdowns.
+
+```c
+int wash_timer = 45;        // The remaining time for washing
+char wash_type[] = "Quick"; // The selected wash type
+
+void save_wash_state() 
+{
+    // Save wash state to non-volatile memory (e.g., Flash)
+    flash_write(&wash_timer, sizeof(wash_timer), FLASH_ADDRESS_TIMER);
+    flash_write(wash_type, sizeof(wash_type), FLASH_ADDRESS_WASH_TYPE);
+}
+
+void restore_wash_state()
+{
+    // Restore wash state after power resumes
+    flash_read(&wash_timer, sizeof(wash_timer), FLASH_ADDRESS_TIMER);
+    flash_read(wash_type, sizeof(wash_type), FLASH_ADDRESS_WASH_TYPE);
+}
+```
+
+When the washing machine operates, the VMA for the wash state is in RAM, where the values are used and modified. However, before a shutdown or after completing a cycle, these values are saved to non-volatile memory (Flash) — this is where the LMA comes into play.
+
+## Upon Power Loss and Restoration
+
+* **Before Power Loss:** The timer and wash type are saved to Flash using their LMA addresses.
+* **After Power Loss:** On power restoration, the saved data is read back from Flash and placed into RAM for execution.
+
+This way, the washing machine continues from where it left off, using the persisted state.
+
+## Conclusion
+
+Understanding the difference between LMA (where code/data is loaded) and VMA (where it is executed) is crucial for optimizing memory usage in embedded systems. This is especially important in appliances that require persistence across power cycles, such as washing machines, where vital data must be saved to non-volatile memory before a shutdown.
+
+By carefully designing with linker scripts and memory management, embedded systems can be robust against unexpected power losses, ensuring reliability and efficiency in everyday appliances.

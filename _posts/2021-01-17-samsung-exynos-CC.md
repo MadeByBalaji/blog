@@ -36,7 +36,7 @@ The **Samsung Exynos 2100** is a flagship SoC that brings next-gen features in *
 
 ---
 
-![Overview](assets/img/blog/2021/sam/2.jpg){: width="655" height="425" }
+![Overview](assets/img/blog/2021/sam/2.JPG){: width="655" height="425" }
 _Overview_
 
 ---

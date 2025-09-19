@@ -14,6 +14,7 @@ This is V.Balaji
 
 👉 Wanna Know About Me? [**It's not who I am underneath, but what I do that defines me.**](https://linktr.ee/v.balaji)
 
-✨Visitor Count
+<a href="{{ site.baseurl }}/assets/doc/Balaji_Velayutham.pdf" download="Balaji_Resume.pdf" class="btn btn-primary">
+  <i class="fas fa-file-pdf"></i> Download Resume
+</a>
 
-![Visitor Count](https://profile-counter.glitch.me/MadeByBalaji/count.svg) 

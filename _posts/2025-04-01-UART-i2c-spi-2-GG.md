@@ -1,5 +1,5 @@
 ---
-title: Frame format of 3-Important protocol
+title: Frame format of 3 Important protocol
 description: There are 3 important protocol in embedded systems, this blog explains them
 date: 2025-10-07 15:21:00 -0530
 categories: [Geeky Gossip]

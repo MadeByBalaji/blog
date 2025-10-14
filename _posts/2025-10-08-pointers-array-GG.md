@@ -1,6 +1,6 @@
 ---
-title: SPI modes
-description: Let’s break down SPI modes slowly and cleanly from physical signals, timing, interpretation, real MCU usage.
+title: Relation between array and pointers in c
+description: Relation between array and pointers in c
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
 tags: [protocol,interview,revision]

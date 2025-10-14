@@ -1,5 +1,5 @@
 ---
-title: SPI modes
+title: Iot on AWS 
 description: Let’s break down SPI modes slowly and cleanly from physical signals, timing, interpretation, real MCU usage.
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]

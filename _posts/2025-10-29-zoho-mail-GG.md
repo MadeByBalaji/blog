@@ -1,8 +1,8 @@
 ---
 title: Using Zoho Mail for a decade Years
-description: Why I’ve Been Using Zoho Mail for more than 5 Years and Still Avoid Google
+description: Using Zoho Mail for more than five Years and Still Avoid Google
 date: 2025-10-29 15:21:00 -0530
-categories: [Geeky Gossip]
+categories: [Chip Chat]
 tags: [balajiuses,tools,makeinindia]
 image:
   path: /assets/img/blog/2025/zoho/zohoGoogle.png

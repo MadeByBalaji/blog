@@ -5,8 +5,8 @@ date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
 tags: [protocol,interview,revision]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/StackvsHeap.png
+  lqip: /assets/img/blog/2025/StackvsHeap.png
 ---
 
 Let’s do a **full, clean, and crash-course explanation of stack and heap in C**, the way you can ace firmware interviews. I’ll keep it practical for embedded firmware.

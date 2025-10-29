@@ -5,8 +5,8 @@ date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
 tags: [protocol,interview,revision]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/SPImodes.jpg
+  lqip: /assets/img/blog/2025/SPImodes.jpg
 ---
 
 Let’s break down **SPI modes** slowly and cleanly — from physical signals → timing → interpretation → real MCU usage.

@@ -5,8 +5,8 @@ date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
 tags: [protocol,interview,revision]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/aws-iot-greengrass.png
+  lqip: /assets/img/blog/2025/aws-iot-greengrass.png
 ---
 
 Ah got it — you were asking about **AWS IoT Greengrass + MQTT** earlier, and I only explained the service flow but skipped the **certificate** part. Let’s cover that clearly:

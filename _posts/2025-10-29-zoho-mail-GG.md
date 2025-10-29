@@ -1,8 +1,8 @@
 ---
-title: Using Zoho Mail for a decade Years
+title: Using Zoho Mail for a decade
 description: Using Zoho Mail for more than five Years and Still Avoid Google
 date: 2025-10-28 15:21:00 -0530
-categories: [Chip Chat]
+categories: [Geeky Gossip]
 tags: [balajiuses,tools,makeinindia]
 image:
   path: /assets/img/blog/2025/zoho/zohoGoogle.png
@@ -49,9 +49,7 @@ Zoho’s Arattai is their attempt to build an Indian alternative to WhatsApp or 
 
 **UI and UX gaps** – It’s clean but lacks the polish of mainstream apps.
 
-**Limited features** – Lacks deeper group tools, advanced file sharing, and multi-device sync.
-
-**Zoho ecosystem lock-in** – It feels like a companion app if you’re already using Zoho services, not a standalone product.
+**Limited features** – Lacks deeper group tools, advanced file sharing.
 
 Still, I like the effort. It’s good to see an Indian tech company stepping up to build privacy-first alternatives.
 

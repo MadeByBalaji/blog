@@ -3,13 +3,13 @@ title: pattern printing in c
 description: pattern printing in C
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
-tags: [protocol,interview,revision]
+tags: [pattern,problems,interview,revision,c]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/PatternPrintc.png
+  lqip: /assets/img/blog/2025/PatternPrintc.png
 ---
 
-Got you, bro í ½í¸Ž Letâ€™s do a **quick crash revision on pattern printing in C**. These are the classics interviewers love to throw at firmware/C devs.
+Letâ€™s do a **quick crash revision on pattern printing in C**. These are the classics interviewers love to throw at firmware/C devs.
 
 ---
 
@@ -28,7 +28,7 @@ int main() {
 }
 ```
 
-í ½í±‰ Output:
+Output:
 
 ```
 * 
@@ -55,7 +55,7 @@ int main() {
 }
 ```
 
-í ½í±‰ Output:
+Output:
 
 ```
 * * * * * 
@@ -81,7 +81,7 @@ int main() {
 }
 ```
 
-í ½í±‰ Output:
+Output:
 
 ```
     *    
@@ -114,7 +114,7 @@ int main() {
 }
 ```
 
-í ½í±‰ Output:
+Output:
 
 ```
     *    
@@ -145,7 +145,7 @@ int main() {
 }
 ```
 
-í ½í±‰ Output:
+Output:
 
 ```
 1 
@@ -157,7 +157,7 @@ int main() {
 
 ---
 
-âš¡ Key takeaways for revision:
+Key takeaways for revision:
 
 * **Outer loop â†’ rows (lines).**
 * **Inner loop(s) â†’ spaces & symbols/numbers.**
@@ -167,5 +167,3 @@ int main() {
   2. Printing the symbol (or number)
 
 ---
-
-Want me to give you a **set of 5 practice pattern problems** (from easy â†’ tricky) so you can test yourself today?

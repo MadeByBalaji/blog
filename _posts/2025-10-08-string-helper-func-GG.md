@@ -3,13 +3,13 @@ title: String Helper Functions
 description: String Helper Functions
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
-tags: [protocol,interview,revision]
+tags: [protocol,interview,revision,string,c]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/StringHelperFunction.png
+  lqip: /assets/img/blog/2025/StringHelperFunction.png
 ---
 
-Perfect, let‚Äôs do a **quick recap of important C string helper functions** from `<string.h>`. These are the ones you‚Äôll actually use a lot in firmware / interviews.
+let‚Äôs do a **quick recap of important C string helper functions** from `<string.h>`. These are the ones you‚Äôll actually use a lot in firmware / interviews.
 
 ---
 
@@ -19,7 +19,7 @@ Perfect, let‚Äôs do a **quick recap of important C string helper functions** fro
 size_t strlen(const char *str);
 ```
 
-Ì†ΩÌ±â Returns length of string (not counting `\0`).
+Returns length of string (not counting `\0`).
 
 ```c
 char s[] = "Hello";
@@ -35,7 +35,7 @@ char *strcpy(char *dest, const char *src);
 char *strncpy(char *dest, const char *src, size_t n);
 ```
 
-Ì†ΩÌ±â `strcpy` copies whole string, `strncpy` limits to `n` chars.
+ `strcpy` copies whole string, `strncpy` limits to `n` chars.
 
 ```c
 char src[] = "World";
@@ -43,7 +43,7 @@ char dest[10];
 strcpy(dest, src);   // dest = "World"
 ```
 
-‚ö†Ô∏è Be careful: `strcpy` can overflow buffer. Use `strncpy` for safety.
+Be careful: `strcpy` can overflow buffer. Use `strncpy` for safety.
 
 ---
 
@@ -54,7 +54,7 @@ char *strcat(char *dest, const char *src);
 char *strncat(char *dest, const char *src, size_t n);
 ```
 
-Ì†ΩÌ±â Appends `src` to `dest`.
+Appends `src` to `dest`.
 
 ```c
 char s[20] = "Hello ";
@@ -70,7 +70,7 @@ int strcmp(const char *s1, const char *s2);
 int strncmp(const char *s1, const char *s2, size_t n);
 ```
 
-Ì†ΩÌ±â Returns `0` if equal, `<0` if s1<s2, `>0` if s1>s2.
+Returns `0` if equal, `<0` if s1<s2, `>0` if s1>s2.
 
 ```c
 printf("%d\n", strcmp("abc","abc")); // 0
@@ -115,7 +115,7 @@ char *p = strstr("hello world", "world"); // points to "world"
 char *strtok(char *str, const char *delim);
 ```
 
-Ì†ΩÌ±â Splits string into tokens.
+Splits string into tokens.
 
 ```c
 char s[] = "red,green,blue";
@@ -154,7 +154,7 @@ int memcmp(const void *s1, const void *s2, size_t n);
 
 ---
 
-‚ö° **Quick Tricks:**
+**Quick Tricks:**
 
 * Use `strlen` + `strcpy`/`strncpy` to duplicate.
 * Use `strtok` to parse UART strings / CSV.

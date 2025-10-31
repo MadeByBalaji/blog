@@ -1,19 +1,19 @@
 ---
-title: How MQTT is in FreeRTOS
-description: How MQTT is in FreeRTOS
+title: How MQTT is used in FreeRTOS
+description: How MQTT is used in FreeRTOS
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
-tags: [protocol,interview,revision]
+tags: [protocol,interview,revision,mqtt]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/howMQTTinFreeRTOS.png
+  lqip: /assets/img/blog/2025/howMQTTinFreeRTOS.png
 ---
 
-Alright bro, letâ€™s walk through **how MQTT is typically implemented in FreeRTOS-based systems** (IoT devices, embedded controllers, etc.). This is a very **common interview + real project scenario** because MQTT is a lightweight publish/subscribe protocol and FreeRTOS is widely used in IoT stacks.
+letâ€™s walk through **how MQTT is typically implemented in FreeRTOS-based systems** (IoT devices, embedded controllers, etc.). This is a very **common interview + real project scenario** because MQTT is a lightweight publish/subscribe protocol and FreeRTOS is widely used in IoT stacks.
 
 ---
 
-## í ½í´¹ **Basic Concept**
+## **Basic Concept**
 
 * **MQTT** = publish/subscribe protocol over TCP/IP.
 * Needs:
@@ -24,7 +24,7 @@ Alright bro, letâ€™s walk through **how MQTT is typically implemented in FreeRTO
 
 ---
 
-## í ½í´¹ **Typical FreeRTOS Architecture for MQTT**
+## **Typical FreeRTOS Architecture for MQTT**
 
 1. **Network Layer**
 
@@ -43,7 +43,7 @@ Alright bro, letâ€™s walk through **how MQTT is typically implemented in FreeRTO
 
 ---
 
-## í ½í´¹ **Example Flow**
+## **Example Flow**
 
 1. **Initialization**
 
@@ -64,7 +64,7 @@ Alright bro, letâ€™s walk through **how MQTT is typically implemented in FreeRTO
 
 ---
 
-## í ½í´¹ **Pseudo-Code in FreeRTOS Style**
+## **Pseudo-Code in FreeRTOS Style**
 
 ```c
 void mqttTask(void *pvParameters) {
@@ -114,7 +114,7 @@ void messageHandler(MessageData *md) {
 
 ---
 
-## í ½í´¹ **FreeRTOS Integration Points**
+## **FreeRTOS Integration Points**
 
 * **Tasks**: Separate tasks for MQTT, sensors, actuators.
 * **Queues/Semaphores**: For inter-task communication (e.g., sensor task â†’ MQTT task).
@@ -123,13 +123,10 @@ void messageHandler(MessageData *md) {
 
 ---
 
-## í ½í´¹ **Real-World Example**
+## **Real-World Example**
 
 * **AWS IoT + FreeRTOS** â†’ uses `coreMQTT` library (optimized for embedded).
 * **Eclipse Paho Embedded C** â†’ simple, portable, widely used in smaller MCUs.
 * **lwIP + FreeRTOS** â†’ common for STM32, ESP32, NXP, etc.
 
 ---
-
-í ½í±‰ Question for you:
-Do you want me to **teach you from scratch with a simple lwIP + FreeRTOS + MQTT example** (barebones), or should I go **deep into AWS IoT style with TLS + certificates** (more production-ready)?

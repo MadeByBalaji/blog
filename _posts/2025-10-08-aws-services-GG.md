@@ -1,19 +1,19 @@
 ---
-title: Iot on AWS 
-description: Letâ€™s break down SPI modes slowly and cleanly from physical signals, timing, interpretation, real MCU usage.
+title: AWS's IoT services
+description: There are multiple AWS services available for IoT, they are listed in this blog. For your reference.
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
-tags: [protocol,interview,revision]
+tags: [protocol,interview,revision,aws,mqtt]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/AWSiotCore.png
+  lqip: /assets/img/blog/2025/AWSiotCore.png
 ---
 
 AWS has a **dedicated IoT service** for MQTT communication, and **Greengrass** is like its local sidekick. Let me break it for you:
 
 ---
 
-## í ½í´¹ AWS Features for MQTT
+## AWS Features for MQTT
 
 1. **AWS IoT Core**
 

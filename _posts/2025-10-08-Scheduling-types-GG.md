@@ -3,18 +3,18 @@ title: Schedulers in RTOS
 description: Schedulers in RTOS
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
-tags: [protocol,interview,revision]
+tags: [protocol,interview,revision, rtos]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/SchedularInRTOS.png
+  lqip: /assets/img/blog/2025/SchedularInRTOS.png
 ---
 
-Nice Bro, letâ€™s go deep into **Schedulers in RTOS**.
+Nice, letâ€™s go deep into **Schedulers in RTOS**.
 Think of scheduler as the **traffic police** of the CPU â€“ it decides **which task runs and when**.
 
 ---
 
-## í ½í´¹ What is a Scheduler?
+## What is a Scheduler?
 
 * In RTOS, multiple tasks exist, but **only one runs on CPU at a time**.
 * The **scheduler** decides which task gets CPU based on priority, state, and algorithm.
@@ -22,7 +22,7 @@ Think of scheduler as the **traffic police** of the CPU â€“ it decides **which t
 
 ---
 
-## í ½í´¹ Types of Schedulers in RTOS
+## Types of Schedulers in RTOS
 
 ### 1. **Cooperative Scheduling**
 
@@ -87,7 +87,7 @@ for(;;)
 
 ---
 
-## í ½í´¹ Summary Table
+## Summary Table
 
 | Scheduler Type                | Preemption          | Who decides CPU use?          | Use Case                              |
 | ----------------------------- | ------------------- | ----------------------------- | ------------------------------------- |
@@ -99,12 +99,10 @@ for(;;)
 
 ---
 
-í ½í±‰ In **FreeRTOS interviews**, they usually expect you to know:
+In **FreeRTOS interviews**, they usually expect you to know:
 
 * **Preemptive vs Cooperative**
 * **Round robin for same priority tasks**
 * How **time slicing** works
 
 ---
-
-Do you want me to also show a **diagram of task states + scheduler decision-making flow** (Ready â†’ Running â†’ Blocked â†’ Suspended)? Thatâ€™ll lock this concept in your head for interviews.

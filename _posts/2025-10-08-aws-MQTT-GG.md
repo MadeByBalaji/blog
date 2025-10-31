@@ -3,17 +3,17 @@ title: MQTT protocol steps
 description: MQTT protocol steps
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
-tags: [protocol,interview,revision]
+tags: [protocol,interview,revision,MQTT,aws]
 image:
   path: /assets/img/blog/2025/3Protocol.png
   lqip: /assets/img/blog/2025/3Protocol.png
 ---
 
-Let‚Äôs break down the **MQTT protocol steps** in a clean way. Think of MQTT as a **conversation between a client (device) and a broker (server)**.
+the **MQTT protocol steps** in a clean way. Think of MQTT as a **conversation between a client (device) and a broker (server)**.
 
 ---
 
-## Ì†ΩÌ¥π 1. **Connect**
+## 1. **Connect**
 
 * Client establishes a **TCP connection** with the broker (default port **1883**, or **8883** if TLS/SSL is used).
 * Then sends an **MQTT CONNECT packet** with:
@@ -23,12 +23,12 @@ Let‚Äôs break down the **MQTT protocol steps** in a clean way. Think of MQTT as 
   * **Keep Alive time** (heartbeat interval).
   * Optional **Will Message** (sent if client disconnects unexpectedly).
 
-Ì†ΩÌ±â Broker replies with **CONNACK** (Connection Acknowledgment).
+ Broker replies with **CONNACK** (Connection Acknowledgment).
 If success ‚Üí you‚Äôre ‚Äúonline‚Äù.
 
 ---
 
-## Ì†ΩÌ¥π 2. **Publish / Subscribe Setup**
+##  2. **Publish / Subscribe Setup**
 
 * **Publish (PUB)**: Client sends a message to a **topic** (like a channel name).
   Example:
@@ -37,11 +37,11 @@ If success ‚Üí you‚Äôre ‚Äúonline‚Äù.
 * **Subscribe (SUB)**: Client tells broker what topics it wants to receive.
   Example: subscribe to `"device/123/cmd"` ‚Üí broker forwards messages from that topic.
 
-Ì†ΩÌ±â Broker replies with **SUBACK** (subscription acknowledgment).
+ Broker replies with **SUBACK** (subscription acknowledgment).
 
 ---
 
-## Ì†ΩÌ¥π 3. **Message Exchange**
+##  3. **Message Exchange**
 
 Once subscribed:
 
@@ -56,7 +56,7 @@ Messages have **QoS (Quality of Service) levels**:
 
 ---
 
-## Ì†ΩÌ¥π 4. **Keep Alive / Ping**
+##  4. **Keep Alive / Ping**
 
 * Client must send **PINGREQ** at intervals < keep-alive time (set during CONNECT).
 * Broker replies with **PINGRESP**.
@@ -64,14 +64,14 @@ Messages have **QoS (Quality of Service) levels**:
 
 ---
 
-## Ì†ΩÌ¥π 5. **Disconnect**
+##  5. **Disconnect**
 
 * Client can send a **DISCONNECT packet** before closing TCP.
 * If device dies suddenly (no DISCONNECT), broker uses keep-alive timeout to detect.
 
 ---
 
-## Ì†ΩÌ¥π Sequence in Practice
+##  Sequence in Practice
 
 Here‚Äôs a normal MQTT session:
 
@@ -86,7 +86,7 @@ Here‚Äôs a normal MQTT session:
 
 ---
 
-## Ì†ΩÌ¥π Visual Example (Sensor Device)
+## Visual Example (Sensor Device)
 
 ```text
 [Device] --CONNECT--> [Broker]
@@ -106,4 +106,4 @@ Here‚Äôs a normal MQTT session:
 
 ---
 
-‚ö° Bro, if you understand this flow, you can explain MQTT protocol **step by step in interviews**.
+Bro, if you understand this flow, you can explain MQTT protocol **step by step in interviews**.

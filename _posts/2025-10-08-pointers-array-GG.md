@@ -3,10 +3,10 @@ title: Relation between array and pointers in c
 description: Relation between array and pointers in c
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
-tags: [protocol,interview,revision]
+tags: [protocol,interview,revision,c]
 image:
-  path: /assets/img/blog/2025/3Protocol.png
-  lqip: /assets/img/blog/2025/3Protocol.png
+  path: /assets/img/blog/2025/PointerArrayC.png
+  lqip: /assets/img/blog/2025/PointerArrayC.png
 ---
 
 Arrays, pointers, and function pointers are *the* brain-bending but powerful parts of C. I‚Äôll give you a crisp **list of important things**, with small code examples and why they matter in real-world firmware/embedded dev.
@@ -23,14 +23,14 @@ int *p = arr;        // arr decays to &arr[0]
 printf("%d\n", *(p+1)); // 20
 ```
 
-‚ö° But note: `sizeof(arr)` is different from `sizeof(p)`.
+But note: `sizeof(arr)` is different from `sizeof(p)`.
 
 ```c
 printf("%zu\n", sizeof(arr)); // 12 (3 * 4 bytes)
 printf("%zu\n", sizeof(p));   // 8 on 64-bit machine
 ```
 
-Ì†ΩÌ±â Embedded trick: `sizeof` is your friend to know array length at compile-time.
+Embedded trick: `sizeof` is your friend to know array length at compile-time.
 
 ---
 
@@ -46,14 +46,14 @@ int main() {
 }
 ```
 
-‚ö° Why? Because array ‚Äúdecays‚Äù to pointer.
+Why? Because array ‚Äúdecays‚Äù to pointer.
 But compiler loses size info ‚Üí you **must pass length separately**.
 
 ---
 
 ### 3. **Pointer to whole array**
 
-Difference between:
+Difference between: Are shown below
 
 ```c
 int arr[5];
@@ -75,7 +75,7 @@ int (*p)[3] = a;  // pointer to array of 3 ints
 printf("%d\n", p[1][2]); // 6
 ```
 
-‚ö° In firmware, this is handy when storing lookup tables (e.g., PWM duty cycles, ADC calibration tables).
+In firmware, this is handy when storing lookup tables (e.g., PWM duty cycles, ADC calibration tables).
 
 ---
 
@@ -87,11 +87,11 @@ int *p = arr;
 printf("%d\n", *(p+2)); // 30
 ```
 
-‚ö° Embedded case: walking through a buffer (UART receive buffer, DMA buffer, etc).
+Embedded case: walking through a buffer (UART receive buffer, DMA buffer, etc).
 
 ---
 
-### 6. **Function pointers (Ì†ΩÌ¥• real firmware use)**
+### 6. **Function pointers ( real firmware use)**
 
 Declare:
 
@@ -108,7 +108,7 @@ int main() {
 }
 ```
 
-‚ö° Use cases in firmware:
+Use cases in firmware:
 
 * Jump tables (replace huge `switch`).
 * ISR callbacks (like HAL_UART_RxCpltCallback in STM32 HAL).
@@ -132,7 +132,7 @@ int main() {
 }
 ```
 
-‚ö° This is gold in **RTOS task tables, command handlers, or protocol parsers**.
+This is gold in **RTOS task tables, command handlers, or protocol parsers**.
 
 ---
 
@@ -143,7 +143,7 @@ int* fun(int *x) { return x; }
 int* (*fp)(int*) = fun;
 ```
 
-‚ö° Looks scary, but sometimes needed when working with library APIs or driver HAL layers.
+Looks scary, but sometimes needed when working with library APIs or driver HAL layers.
 
 ---
 
@@ -154,17 +154,18 @@ const int *p;   // pointer to const data (can‚Äôt change *p)
 int *const q;   // const pointer (can‚Äôt change q itself)
 ```
 
-‚ö° Used in firmware when you don‚Äôt want ISRs or tasks to corrupt lookup tables.
+Used in firmware when you don‚Äôt want ISRs or tasks to corrupt lookup tables.
 
 ---
 
 ### 10. **Volatile with arrays/pointers**
 
 ```c
+#define TIMER_COUNT_REG (* ( (uint32_t volatile *) 0x40021000  ) )
 volatile uint32_t *reg = (uint32_t*)0x40021000; 
 *reg = 1;  // directly writing to peripheral register
 ```
 
-‚ö° **Must-know** in embedded: `volatile` stops compiler from optimizing out hardware register access.
+**Must-know** in embedded: `volatile` stops compiler from optimizing out hardware register access.
 
 ---

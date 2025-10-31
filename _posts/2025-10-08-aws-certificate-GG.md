@@ -9,7 +9,7 @@ image:
   lqip: /assets/img/blog/2025/aws-iot-greengrass.png
 ---
 
-Ah got it — you were asking about **AWS IoT Greengrass + MQTT** earlier, and I only explained the service flow but skipped the **certificate** part. Let’s cover that clearly:
+We were discussing about **AWS IoT Greengrass + MQTT** earlier, and I only explained the service flow but skipped the **certificate** part. Let’s cover that clearly:
 
 ---
 
@@ -58,8 +58,6 @@ Ah got it — you were asking about **AWS IoT Greengrass + MQTT** earlier, and I
 
 ---
 
-✅ So the missing piece: **You always need an AWS IoT certificate (X.509) and IoT policy attached to it to use MQTT with AWS IoT Core or Greengrass.**
+ So the missing piece: **You always need an AWS IoT certificate (X.509) and IoT policy attached to it to use MQTT with AWS IoT Core or Greengrass.**
 
 ---
-
-Do you want me to show you **step-by-step how to generate and attach certificates for a device in AWS IoT**, or just a high-level summary of the flow is enough?

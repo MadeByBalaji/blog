@@ -3,7 +3,7 @@ title: MQTT protocol steps
 description: MQTT protocol steps
 date: 2025-10-08 15:21:00 -0530
 categories: [Geeky Gossip]
-tags: [protocol,interview,revision,MQTT,aws]
+tags: [protocol,interview,revision,mqtt,aws]
 image:
   path: /assets/img/blog/2025/3Protocol.png
   lqip: /assets/img/blog/2025/3Protocol.png

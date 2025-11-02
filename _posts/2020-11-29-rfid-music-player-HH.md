@@ -3,7 +3,7 @@ title: RFID Based Music Player
 description: In this project, I used Arduino UNO to make RFID based music player.
 date: 2020-11-29 10:20:00 -0530
 categories: [Hobbyist Haven]
-tags: [bareMetalCode,arduino]
+tags: [baremetal,arduino]
 image:
   path: /assets/img/blog/2020/rfid-music/RfidMusicPlayer.jpg
   lqip: /assets/img/blog/2020/rfid-music/RfidMusicPlayer.jpg

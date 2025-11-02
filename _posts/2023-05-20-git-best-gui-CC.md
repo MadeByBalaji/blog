@@ -5,8 +5,8 @@ date: 2023-05-17 10:20:00 -0530
 categories: [Chip Chat]
 tags: [news,git,gui,tools]
 image:
-  path: /assets/img/blog/2023/exe/flow.jpg
-  lqip: /assets/img/blog/2023/exe/flow.jpg
+  path: /assets/img/blog/2023/git/GUI.jpg
+  lqip: /assets/img/blog/2023/git/GUI.jpg
 ---
 
 # What is Git GUI?

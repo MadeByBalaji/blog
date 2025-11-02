@@ -3,7 +3,7 @@ title: Register Level Coding in Arduino UNO
 description: In this blog post, I will be doing register level coding using Arduino UNO.
 date: 2020-11-08 10:20:00 -0530
 categories: [Hobbyist Haven]
-tags: [bareMetalCode,arduino]
+tags: [baremetal,arduino]
 #pin: true
 #math: true
 #mermaid: true

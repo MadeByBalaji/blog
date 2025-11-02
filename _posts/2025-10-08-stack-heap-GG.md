@@ -130,5 +130,3 @@ int main() {
 * In embedded, **avoid dynamic heap allocation in critical loops** because it can fragment memory over time.
 
 ---
-
-Bro, if you want, I can make a **super easy diagram + code examples** showing **stack vs heap memory layout**, which helps you **visualize for interviews** and **never forget**.
